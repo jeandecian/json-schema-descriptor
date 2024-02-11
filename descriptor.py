@@ -13,12 +13,10 @@ if "http" in source:
             key, value = param.split("=")
             schema["source"]["url"]["params"][key] = value
 
-    data = get(source).json()
+    schema["source"]["data"] = get(source).json()
 elif ".json" in source:
     schema["source"]["file"] = source
 
-    data = load(open(source))
-
-print(data)
+    schema["source"]["data"] = load(open(source))
 
 print(schema)

@@ -1,5 +1,6 @@
 schema = {
     "source": {
+        "data": {},
         "file": "",
         "url": {
             "base": "",
