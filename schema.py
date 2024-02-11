@@ -3,7 +3,7 @@ schema = {
         "file": "",
         "url": {
             "base": "",
-            "params": [],
+            "params": {},
         },
     },
     "properties": [],
